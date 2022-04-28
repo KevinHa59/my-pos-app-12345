@@ -14,7 +14,7 @@ public class ProductApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(ProductApplication.class, args);
-        System.out.print("Hello World");
+
     }
 
 }
