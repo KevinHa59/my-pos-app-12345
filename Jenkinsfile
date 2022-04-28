@@ -51,12 +51,12 @@ pipeline {
                 git 'https://github.com/KevinHa59/my-pos-app-12345.git'
             }
         }
-        stage('SSH Server'){
-            steps{
-                sshagent(['ssh-remote']) {
-//                     sh 'ssh -o StrictHostKeyChecking=no -l root 169.254.123.38 uname -a'
-                }
-            }
-        }
+//         stage('SSH Server'){
+//             steps{
+//                 sshagent(['ssh-remote']) {
+// //                     sh 'ssh -o StrictHostKeyChecking=no -l root 169.254.123.38 uname -a'
+//                 }
+//             }
+//         }
     }
 }
