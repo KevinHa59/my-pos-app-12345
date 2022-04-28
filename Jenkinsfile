@@ -53,7 +53,7 @@ pipeline {
         }
         stage('SSH Server'){
             steps{
-                sshagent(['root']) {
+                sshagent(['ssh-remote']) {
 //                     sh 'ssh -o StrictHostKeyChecking=no -l root 169.254.123.38 uname -a'
                 }
             }
