@@ -54,7 +54,7 @@ pipeline {
         stage('SSH Server'){
             steps{
                 sshagent(['ssh-remote']) {
-                    sh 'ssh -o StrictHostKeyChecking=no -l DESKTOP-REETF1N\haquo 169.254.123.38 uname -a'
+                    sh 'ssh -o StrictHostKeyChecking=no -l haquo 169.254.123.38 uname -a'
                 }
             }
         }
